@@ -17,12 +17,6 @@ function drawSierpinski(x, y, size, depth) {
         context.stroke();
         context.fill();
     } else {
-        const x1 = x + size / 2;
-        const y1 = y;
-        const x2 = x;
-        const y2 = y + size * Math.sqrt(3) / 2;
-        const x3 = x + size;
-        const y3 = y + size * Math.sqrt(3) / 2;
 
         drawSierpinski(x, y, size / 2, depth - 1);
         drawSierpinski(x - size / 2, y, size / 2, depth - 1);
